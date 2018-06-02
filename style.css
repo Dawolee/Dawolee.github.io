@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+}
 
 #about {
   padding: 2%;
@@ -9,15 +18,14 @@
 
 #about-me-text {
   margin-left: 10%;
-  width: 40%;
+  width: 30%;
 }
 
 #about-header,
-#projects-header,
-#contact-header {
+#projects-header {
   text-align: center;
-  text-decoration: underline;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
+  justify-content: start;
 }
 
 #profile-pic {
@@ -28,7 +36,6 @@
 }
 
 .header-name {
-  margin-top: 2%;
   text-align: center;
   font-family: 'Bungee', cursive;
   justify-content: start;
@@ -48,6 +55,8 @@
 }
 
 #projects {
+  padding: 5%;
+  background-image: url('http://blog.visme.co/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-08.jpg');
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -74,4 +83,9 @@
 
 .single-icon {
   margin: 1%;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
 }
