@@ -13,7 +13,8 @@
 }
 
 #about-header,
-#projects-header {
+#projects-header,
+#contact-header {
   text-align: center;
   text-decoration: underline;
   margin-bottom: 2%;
@@ -27,7 +28,14 @@
 }
 
 .header-name {
+  margin-top: 2%;
+  text-align: center;
   font-family: 'Bungee', cursive;
+  justify-content: start;
+}
+
+.nav-buttons {
+  justify-content: end;
 }
 
 .nav-style {
@@ -53,4 +61,17 @@
 #project-image {
   width: 300px;
   height: 200px;
+}
+
+.email {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.single-icon {
+  margin: 1%;
 }
