@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+#about {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  background-image: url('https://pixteller.com/assets/storage/designs_images/2017-07-30/12/backgrounds-passion-simple-background-image-1-597da2904f1cc.png');
+}
+
+#about-me-text {
+  margin-left: 10%;
+  width: 40%;
+}
+
+#about-header,
+#projects-header {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 2%;
+}
+
+#profile-pic {
+  align-self: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+}
+
+.header-name {
+  font-family: 'Bungee', cursive;
+}
+
+.nav-style {
+  width: 50%;
+}
+
+.navbar-flex {
+  display: flex;
+  margin: 2%;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#project-box {
+  text-align: center;
+  width: 33%;
+}
+
+#project-image {
+  width: 300px;
+  height: 200px;
+}
