@@ -24,8 +24,8 @@ a {
 #about-header,
 #projects-header {
   text-align: center;
-  margin-bottom: 3%;
   justify-content: start;
+  width: 100%;
 }
 
 #profile-pic {
@@ -62,14 +62,17 @@ a {
   justify-content: space-evenly;
 }
 
-#project-box {
+.project-box {
   text-align: center;
   width: 33%;
+  margin-top: 3%;
+  padding: 1%;
 }
 
 #project-image {
-  width: 300px;
-  height: 200px;
+  width: 80%;
+  height: 70%;
+  margin-bottom: 3%;
 }
 
 .email {
@@ -88,4 +91,22 @@ a {
 
 a:hover {
   text-decoration: none !important;
+}
+
+#show-projects {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#more-projects {
+  display: none;
+  flex-wrap: wrap;
+}
+
+.proficient {
+  text-align: center;
+}
+
+.proficient > h4 {
+  margin-bottom: 2%;
 }
