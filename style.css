@@ -70,7 +70,7 @@ a {
 }
 
 #project-image {
-  width: 80%;
+  width: 90%;
   height: 70%;
   margin-bottom: 3%;
 }
@@ -95,7 +95,7 @@ a:hover {
 
 #show-projects {
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
 }
 
 #more-projects {
