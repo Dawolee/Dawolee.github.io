@@ -1,0 +1,162 @@
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &--front {
+      background-color: $color-white;
+    }
+  }
+
+  //   &:hover &__side--front {
+  //     transform: rotateY(-180deg);
+  //   }
+
+  //   &:hover &__side--back {
+  //     transform: rotateY(0);
+  //   }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    width: auto;
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-position: center;
+    // background-blend-mode: screen;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1 {
+      background-image: url('/imgs/Codebono.gif');
+    }
+
+    &--2 {
+      background-image: url('/imgs/Lee-sten.gif');
+    }
+
+    &--3 {
+      background-image: url('/imgs/calendar_app.gif');
+    }
+
+    &--4 {
+      background-image: url('/imgs/D&D.gif');
+    }
+    &--5 {
+      background-image: url('/imgs/Simon.gif');
+    }
+    &--6 {
+      background-image: url('/imgs/TicTacToe.gif');
+    }
+    &--7 {
+      background-image: url('/imgs/Pomo.gif');
+    }
+    &--8 {
+      background-image: url('/imgs/Twitch.gif');
+    }
+    &--9 {
+      background-image: url('/imgs/Wikipedia.gif');
+    }
+    &--10 {
+      background-image: url('/imgs/RandomQuote.gif');
+    }
+  }
+
+  &__details {
+    position: relative;
+    padding: 3rem;
+    font-size: 1.5rem;
+  }
+
+  // FRONT SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__project-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__project-tech {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__project-tech-list {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
+  }
+}

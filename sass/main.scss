@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/utilities';
+@import 'base/animations';
+@import 'base/typography';
+
+@import 'components/button';
+@import 'components/composition';
+@import 'components/card';
+@import 'components/feature-box';
+@import 'components/popup';
+
+@import 'layout/header';
+@import 'layout/grid';
+@import 'layout/footer';
+
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
+}
+
+.section-proficient {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(lightblue, 0.8),
+      rgba(blue, 0.8)
+    ),
+    url('../imgs/pixelgif.gif');
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.section-projects {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem;
+
+  @include respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
+}
+
+#projects-header {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#projects {
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: 20px 20px 20px 20px white;
+}
+
+.project-box {
+  text-align: center;
+  width: 33%;
+  min-width: 300px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 1%;
+}
+
+#project-image {
+  width: 90%;
+  height: 70%;
+  margin-bottom: 3%;
+}
+
+.email {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.single-icon {
+  margin: 2% 5% 2% 5%;
+  text-decoration: none;
+}
+
+#more-projects {
+  display: none;
+}
+
+#contact {
+  box-shadow: 20px 20px 20px 20px black;
+  background-image: url('../imgs/SoftAmbience.jpg');
+  padding: 2%;
+}
+
+.contact-info {
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+.contact-info > p {
+  margin-top: 2.5%;
+  margin-left: 5%;
+}

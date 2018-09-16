@@ -2,11 +2,13 @@ let showtime = document.getElementById('show-projects')
 let hidden = document.getElementById('more-projects')
 
 showtime.addEventListener('click', function() {
-  if (hidden.style.display === 'flex') {
+  if (hidden.style.display === 'block') {
     hidden.style.display = 'none'
+    showtime.classList.remove('u-margin-bottom-big')
     this.innerText = 'View More Projects'
-  } else if (hidden.style.display !== 'flex') {
-    hidden.style.display = 'flex'
+  } else if (hidden.style.display !== 'block') {
+    hidden.style.display = 'block'
+    showtime.classList.add('u-margin-bottom-big')
     this.innerText = 'Hide Extra Projects'
   }
 })

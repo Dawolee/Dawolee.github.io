@@ -8,166 +8,303 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="/imgs/favicon.ico">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-    crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class='header'>
-    <div class='header-name'>
-      <h1>Da Woon (Daniel) Lee</h1>
-      <h4>Software Engineer</h4>
+  <header class='header'>
+    <div class='header__text-box'>
+      <h1 class='heading-primary'>
+        <span class='heading-primary--main'>Da Woon Lee</span>
+        <span class='heading-primary--sub'>Software Engineer</span>
+      </h1>
+      <a href='imgs/Resume.pdf' target="_blank" class='btn btn--white btn--animated'>View Resume</a>
+
+      <!-- <div class='
+        header-btns'>
+        <button type="button" class="btn btn-secondary" id='about-btn'>About Me</button>
+        <button type="button" class="btn btn-secondary" id='project-btn'>My Projects</button>
+        <button type="button" class="btn btn-secondary" id='contact-btn'>Contact Info</button>
+    </div> -->
     </div>
-    <div class='header-contact'>
-      <a href='imgs/Resume.pdf'>View Resume</a>
-    </div>
-    <div class='header-btns'>
-      <button type="button" class="btn btn-secondary" id='about-btn'>About Me</button>
-      <button type="button" class="btn btn-secondary" id='project-btn'>My Projects</button>
-      <button type="button" class="btn btn-secondary" id='contact-btn'>Contact Info</button>
-    </div>
-  </div>
-  <div id='about'>
-    <div id='about-me-pic'>
-      <h3 id='about-header'>About Me</h3>
-      <div class='profile-pic-container'>
-        <img id='profile-pic' src='./imgs/Profile Pic.jpeg' />
+  </header>
+  <main>
+
+    <section class='section-about'>
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">About Me</h2>
       </div>
-    </div>
-    <div id='about-me-text'>
-      <p>
-        I am a Fullstack developer looking for full-time employment!
-      </p>
-      <p>
-        Having always been interested in the tech industry and religiously using many media/entertainment websites, I decided to
-        learn to code by myself while working on my Master's degree using resources such as freeCodeCamp and Udemy. Through
-        this process, I found passion in programming and have taken the steps to make my dreams a reality by applying for
-        Fullstack Academy.
-      </p>
-      <p>I am looking forward to working in the tech industry, especially those involved in the media/entertainment/video gaming
-        industry!
-        <p>
-          However, I am open to all opportunities. Reach out to me by email or on any of my links below!
-        </p>
-      </p>
-    </div>
-    <div class='proficient'>
-      <h4>Technologies I am Familiar With</h4>
-      <p>Proficient: JavaScript, HTML, CSS, React, Redux, React-Redux, Express, Sequelize, Node.js, PostgreSQL</p>
-      <p>
-        Some Experience: SQL, Auther, PassPort, Stripe API, Socket.io
-      </p>
-      <p>
-        Currently Learning/Working With: React Native, Python
-      </p>
-    </div>
-  </div>
-  <div id='projects'>
-    <div id='projects-header'>
-      <h3>My Projects</h3>
-      <p>Check them out by clicking on the names!</p>
-    </div>
-    <div class='all-projects-container'>
-      <div class='project-box' class='static'>
-        <a href='http://www.codebono.org/' target=" _blank ">
-          <h4>Code Bono</h4>
-        </a>
-        <img id='project-image' src='./imgs/Codebono.gif' />
-        <p>A platform where non-profit companies can post proposals for developers to collaborate on! Watch a demo
-          <a href='https://www.youtube.com/watch?v=7KNuHWqIDFI' target="_blank ">here!</a>
-        </p>
-      </div>
-      <div class='project-box'>
-        <a href='https://lee-sten.herokuapp.com/' target="_blank ">
-          <h4>Lee-Sten</h4>
-        </a>
-        <img id='project-image' src='./imgs/Lee-sten.gif' />
-        <p>Custom sound board app where you can drag in custom sound files to populate your keys!</p>
-      </div>
-      <div class='project-box'>
-        <a href='https://dd-wine.herokuapp.com/' target="_blank ">
-          <h4>Graceshopper</h4>
-        </a>
-        <img id='project-image' src='./imgs/D&D.gif' />
-        <p>A e-commerce website made during my Fullstack academy experience!</p>
-      </div>
-      <button type="button" class="btn btn-primary" id='show-projects'>View More Projects</button>
-      <div id='more-projects'>
-        <div class='project-box'>
-          <a href='https://schedu-lee.herokuapp.com/' target="_blank ">
-            <h4>Calendar App</h4>
-          </a>
-          <img id='project-image' src='./imgs/calendar_app.gif' />
-          <p>A calendar app which you can add events to!</p>
+
+      <div class='row'>
+
+        <div class='col-1-of-2'>
+          <h3 class="heading-tertiary u-margin-bottom-small">I am a Fullstack developer looking for full-time
+            employment!</h3>
+          <p class="paragraph">Having always been interested in the tech industry and being an avid user of many
+            media/entertainment websites, I decided to learn to code by myself while working on my Master's degree
+            using resources such as freeCodeCamp and Udemy.
+          </p>
+          <p class='paragraph'>
+            Through this process, I found passion in programming and
+            have taken the steps to make my dreams a reality by applying for Fullstack Academy.
+            I am looking forward to working in the tech industry, especially those involved in the
+            media/entertainment/video gaming
+            industry! However, I am open to all opportunities. Reach out to me by email or on any of my links below!
+          </p>
         </div>
-        <div class='project-box'>
-          <a href='https://codepen.io/Dawolee/full/dVOemg/' target="_blank ">
-            <h4>Game of Simon</h4>
-          </a>
-          <img id='project-image' src='./imgs/Simon.gif' />
-          <p>Play a Game of Simon with two difficulty settings!</p>
-        </div>
-        <div class='project-box'>
-          <a href='https://codepen.io/Dawolee/full/Ljdjqx/' target="_blank ">
-            <h4>Tic-Tac-Toe</h4>
-          </a>
-          <img id='project-image' src='./imgs/TicTacToe.gif' />
-          <p>Play a game of Tic-Tac-Toe against a friend or against a robot! (...that randomly places pieces on the board)</p>
-        </div>
-        <div class='project-box'>
-          <a href='https://codepen.io/Dawolee/full/QMvZWx/' target="_blank ">
-            <h4>JavaScript Pomodoro Clock</h4>
-          </a>
-          <img id='project-image' src='./imgs/Pomo.gif' />
-          <p>A Pomodoro timer to help you with managing your break times!</p>
-        </div>
-        <div class='project-box'>
-          <a href='https://codepen.io/Dawolee/full/QgdrdK/' target="_blank ">
-            <h4>JavaScript Twitch App</h4>
-          </a>
-          <img id='project-image' src='./imgs/Twitch.gif' />
-          <p>A simple Twitch App made with JavaScript!</p>
-        </div>
-        <div class='project-box'>
-          <a href='https://codepen.io/Dawolee/full/BZLNbE/' target="_blank ">
-            <h4>Wikipedia Search</h4>
-          </a>
-          <img id='project-image' src='./imgs/Wikipedia.gif' />
-          <p>Why use the default Wikipedia search when you have this beauty instead?</p>
-        </div>
-        <div class='project-box'>
-          <a href='https://codepen.io/Dawolee/full/jwWbmz/' target="_blank ">
-            <h4>Random Quote Generator</h4>
-          </a>
-          <img id='project-image' src='./imgs/Random Quote.gif' />
-          <p>Read some random quotes and tweet about them!</p>
+
+        <div class='col-1-of-2 order-1st'>
+          <div class="composition">
+            <img src="imgs/Profile Pic.jpeg" alt="Profile Pic" class="composition__photo  composition__photo--p1">
+          </div>
         </div>
       </div>
+
+    </section>
+
+    <section class="section-proficient">
+
+      <div class="u-center-text u-margin-bottom-big">
+        <h1 class='heading-primary'>
+          <span class="heading-tertiary">Tech Stack</span>
+        </h1>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-world"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Proficient</h3>
+            <p class="feature-box__text">
+              JavaScript, HTML, CSS, React, Redux, React-Redux, Express, Sequelize, Node.js, PostgreSQL
+            </p>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-compass"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Some Experience</h3>
+            <p class="feature-box__text">
+              SQL, Auther, PassPort, Stripe API, Socket.io
+            </p>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-map"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Currently Learning</h3>
+            <p class="feature-box__text">
+              React Native, Python, Django
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-projects" id="section-projects">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class='heading-secondary'>My Projects</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--1">
+                &nbsp;
+              </div>
+              <div class="card__details u-center-text">
+                <h2>Code-Bono</h2>
+                <p class='u-margin-bottom-small'>A platform where non-profit companies can post proposals for
+                  developers to collaborate on!</p>
+                <a href='http://www.codebono.org/' target=" _blank " class="btn btn--white">Go To Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--2">
+                &nbsp;
+              </div>
+              <div class="card__details u-center-text">
+                <h2>Lee-Sten</h2>
+                <p class='u-margin-bottom-small'>Custom sound board app where you can drag in custom sound files to
+                  populate your keys!</p>
+                <a href='https://lee-sten.herokuapp.com/' target=" _blank " class="btn btn--white">Go To Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--3">
+                &nbsp;
+              </div>
+              <div class="card__details u-center-text">
+                <h2>Schedu-lee</h2>
+                <p class='u-margin-bottom-small'>A calendar app which you can add events to! Comes with three different
+                  views!</p>
+                <a href='https://schedu-lee.herokuapp.com/' target=" _blank " class="btn btn--white">Go To Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='u-center-text'>
+        <span id="show-projects">View More Projects</span>
+      </div>
+
+      <section id='more-projects'>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--4">
+                  &nbsp;
+                </div>
+                <div class="card__details u-center-text">
+                  <h2>Graceshopper</h2>
+                  <p class='u-margin-bottom-small'>A e-commerce website made during my Fullstack academy experience!</p>
+                  <a href='https://dd-wine.herokuapp.com/' target=" _blank " class="btn btn--white">Go To Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--5">
+                  &nbsp;
+                </div>
+                <div class="card__details u-center-text">
+                  <h2>Game of Simon</h2>
+                  <p class='u-margin-bottom-small'>Play a Game of Simon with two difficulty settings!</p>
+                  <a href='https://codepen.io/Dawolee/full/dVOemg/' target=" _blank " class="btn btn--white ">Go
+                    To
+                    Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--6">
+                  &nbsp;
+                </div>
+                <div class="card__details u-center-text">
+                  <h2>Tic-Tac-Toe</h2>
+                  <p class='u-margin-bottom-small'>Play a game of Tic-Tac-Toe against a friend or against a random CPU!</p>
+                  <a href='https://codepen.io/Dawolee/full/Ljdjqx/' target=" _blank " class="btn btn--white">Go To
+                    Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--7">
+                  &nbsp;
+                </div>
+                <div class="card__details u-center-text">
+                  <h2>Pomodoro Clock</h2>
+                  <p class='u-margin-bottom-small'>A Pomodoro timer to help you with managing your break times!</p>
+                  <a href='https://codepen.io/Dawolee/full/QMvZWx/' target=" _blank " class="btn btn--white">Go To
+                    Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--8">
+                  &nbsp;
+                </div>
+                <div class="card__details u-center-text">
+                  <h2>JavaScript Twitch App</h2>
+                  <p class='u-margin-bottom-small'>A simple Twitch App made with JavaScript!</p>
+                  <a href='https://codepen.io/Dawolee/full/QgdrdK/' target=" _blank " class="btn btn--white ">Go
+                    To
+                    Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--9">
+                  &nbsp;
+                </div>
+                <div class="card__details u-center-text">
+                  <h2>Wikipedia Search</h2>
+                  <p class='u-margin-bottom-small'>Why use the default Wikipedia search when you have this beauty
+                    instead?</p>
+                  <a href='https://codepen.io/Dawolee/full/BZLNbE/' target=" _blank " class="btn btn--white">Go To
+                    Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--10">
+                  &nbsp;
+                </div>
+                <div class="card__details u-center-text">
+                  <h2>Random Quote Generator</h2>
+                  <p class='u-margin-bottom-small'>Read some random quotes and tweet about them!</p>
+                  <a href='https://codepen.io/Dawolee/full/jwWbmz/' target=" _blank " class="btn btn--white">Go To
+                    Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col-1-of-2">
+        <div class="footer__contact">
+          <p>Email: daniel.lee9415@gmail.com</p>
+          <p>Phone #: 917-446-4667</p>
+        </div>
+      </div>
+      <div class="col-1-of-2">
+        <div class="footer__social u-center-text">
+          <a class='icon' href='https://github.com/Dawolee ' target="_blank ">
+            <i class="fab fa-github fa-2x "></i>
+          </a>
+          <a class='icon' href='https://www.linkedin.com/in/da-woon-lee/ ' target="_blank ">
+            <i class="fab fa-linkedin fa-2x "></i>
+          </a>
+          <a class='icon' href='https://angel.co/da-woon-lee ' target="_blank ">
+            <i class="fab fa-angellist fa-2x "></i>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div id='contact'>
-    <div class='contact-info'>
-      <h3>Contact Info</h3>
-      <p>Email: daniel.lee9415@gmail.com</p>
-      <p>Phone #: 917-446-4667</p>
-    </div>
-    <div class='icons '>
-      <a class='single-icon ' href='https://github.com/Dawolee ' target="_blank ">
-        <i class="fab fa-github fa-2x "></i>
-      </a>
-      <a class='single-icon ' href='https://www.linkedin.com/in/da-woon-lee/ ' target="_blank ">
-        <i class="fab fa-linkedin fa-2x "></i>
-      </a>
-      <a class='single-icon ' href='https://angel.co/da-woon-lee ' target="_blank ">
-        <i class="fab fa-angellist fa-2x "></i>
-      </a>
-    </div>
-  </div>
+  </footer>
   <script src=" " async defer></script>
   <script src='app.js '></script>
 </body>
