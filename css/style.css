@@ -213,7 +213,7 @@ body {
   justify-content: center;
   margin-bottom: 6rem; }
   .composition__photo {
-    flex: 0 1 20px;
+    flex: 0 1 30rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     width: 60%;
@@ -447,8 +447,8 @@ body {
       background-image: linear-gradient(to right bottom, rgba(193, 205, 205, 0.8), rgba(40, 180, 133, 0.8)), url("/imgs/pixelgif.gif"); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%); } }
   .header__text-box {
     position: absolute;
     top: 50%;
