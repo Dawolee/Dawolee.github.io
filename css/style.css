@@ -277,6 +277,8 @@ body {
       background-image: url("/imgs/Wikipedia.gif"); }
     .card__picture--10 {
       background-image: url("/imgs/RandomQuote.gif"); }
+    .card__picture--11 {
+      background-image: url("/imgs/leeloquent.gif"); }
   .card__details {
     position: relative;
     padding: 3rem;
