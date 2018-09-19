@@ -13,26 +13,42 @@ showtime.addEventListener('click', function() {
   }
 })
 
+let homeBtn = document.getElementById('home-btn')
 let aboutBtn = document.getElementById('about-btn')
-let projectBtn = document.getElementById('project-btn')
+let techStackBtn = document.getElementById('tech-btn')
+let projectsBtn = document.getElementById('projects-btn')
 let contactBtn = document.getElementById('contact-btn')
 
-aboutBtn.addEventListener('click', () => {
-  document.getElementById('about').scrollIntoView({
+homeBtn.addEventListener('click', () => {
+  document.getElementById('header-section').scrollIntoView({
     behavior: 'smooth',
     block: 'start'
   })
 })
 
-projectBtn.addEventListener('click', () => {
-  document.getElementById('projects').scrollIntoView({
+aboutBtn.addEventListener('click', () => {
+  document.getElementById('about-section').scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  })
+})
+
+techStackBtn.addEventListener('click', () => {
+  document.getElementById('tech-stack-section').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+})
+
+projectsBtn.addEventListener('click', () => {
+  document.getElementById('projects-section').scrollIntoView({
     behavior: 'smooth',
     block: 'start'
   })
 })
 
 contactBtn.addEventListener('click', () => {
-  document.getElementById('contact').scrollIntoView({
+  document.getElementById('contact-section').scrollIntoView({
     behavior: 'smooth',
     block: 'start'
   })
